@@ -1,4 +1,6 @@
 streamlit==1.29.0
 requests==2.31.0
-sentence-transformers
 faiss-cpu>=1.10.0
+sentence-transformers==2.2.2
+huggingface_hub==0.16.4
+torch
