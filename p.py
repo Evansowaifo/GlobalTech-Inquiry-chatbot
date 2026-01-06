@@ -1,4 +1,5 @@
 import json
+import os
 import requests
 import time
 import faiss
@@ -67,6 +68,8 @@ BLOCKED = [
     'self-harm','suicide','exploit','malware','phishing','scam','fraud',
     'porn','nsfw','racist','sexist','discriminatory','harassment','bullying'
 ]
+
+HF_API_KEY = os.getenv("HF_API_KEY")
 
 valid_token = {}
 token_counter = 0
@@ -176,7 +179,7 @@ def chat(sys, msg):
 def query_llama(prompt):
     r = requests.post(
         "https://router.huggingface.co/v1/chat/completions",
-        headers={"Authorization":"Bearer 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"},
+        headers={"Authorization":"Bearer {HF_API_KEY}"},
         json={
             "model":"Qwen/Qwen2.5-Coder-7B-Instruct",
             "messages":[{"role":"user","content":prompt}],
