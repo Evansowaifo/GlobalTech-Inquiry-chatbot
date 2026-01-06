@@ -115,7 +115,7 @@ embedding_model = None
 faiss_index = None
 document_chunks = []
 
-def init_rag(model_path="./all-MiniLM-L6-v2-local"):
+def init_rag(model_path="all-MiniLM-L6-v2"):
     global embedding_model
     embedding_model = SentenceTransformer(model_path)
 
