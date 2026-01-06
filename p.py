@@ -176,7 +176,7 @@ def chat(sys, msg):
 def query_llama(prompt):
     r = requests.post(
         "https://router.huggingface.co/v1/chat/completions",
-        headers={"Authorization":"Bearer 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"},
+        headers={"Authorization":"Bearer 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"},
         json={
             "model":"Qwen/Qwen2.5-Coder-7B-Instruct",
             "messages":[{"role":"user","content":prompt}],
