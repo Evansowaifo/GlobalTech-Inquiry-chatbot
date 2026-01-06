@@ -156,6 +156,8 @@ Instruction:
 If no relevant context is found, answer independently.
 Do NOT repeat the user's question.
 Do NOT mention missing context.
+Thank you should respond "You are welcome"
+Anything about contacting the admin or anything that looks like the user wants or ask to communicate with a real person, give this number: +2349051434437  
 
 Previous conversation:
 {conv}
