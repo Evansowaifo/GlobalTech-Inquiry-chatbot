@@ -1,7 +1,7 @@
 streamlit
 requests
 faiss-cpu
-sentence-transformers
+sentence-transformers==2.2.2
 transformers
-torch  
-huggingface-hub
+torch
+huggingface-hub==0.16.4
